@@ -1,0 +1,36 @@
+<!--Esta base obrigatoriamente deve ter carregado os arquivos estáticos para que ele carregue nas de mais dependências -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Bootstrap core CSS -->
+ <link rel="stylesheet" href="{% static 'admin/css/bootstrap.min.css'%}">
+ <link rel="stylesheet" href="{% static 'app01/css/base.css'%}">
+ <!-- Font-awesome -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<style>
+.paralax1{
+    color: rgb(27, 17, 17);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:local;
+    padding-top: 200px;
+    padding-bottom:200px;
+    background-image: url("{% static 'app01/manu.png'%}");
+}
+</style>
+ 
+</head>
+<body>
+    <div class="">
+        {% include "base/nav.html" %}
+            {% block content %}
+            {% endblock content %}
+        {% include "base/footer.html" %}
+    </div>
+</body>
+</html>
