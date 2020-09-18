@@ -1,0 +1,19 @@
+{
+  "name": "felipe_reznov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch admin/css/style.scss admin/css/style.css",
+    "sass-min": "node-sass admin/css/style.scss admin/css/style.min.css --output-style compressed "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.11.0"
+  }
+}
