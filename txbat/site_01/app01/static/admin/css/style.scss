@@ -43,7 +43,6 @@ $nwInfo:     #5722b9 ;
 $nwWarning:  #ddcb27 ;
 $nwDanger:   #f53030 ;
 
-
 $colors: (
   blue: $blue,
   indigo: $indigo,
@@ -71,6 +70,5 @@ $theme-colors: (
   dark: $gray-800,
   yellow:$yellow
 ) !default;
-
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
